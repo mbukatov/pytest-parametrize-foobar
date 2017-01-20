@@ -19,5 +19,7 @@ def test_bar(x, y, z):
     assert y is not None
     # assert z is not None
 
-def test_baz(single_one):
-    assert len(single_one) == 1
+
+@pytest.mark.parametrize("other_one", [[1],[None]])
+def test_baz(single_one, other_one):
+    assert len(single_one + other_one) == 2
