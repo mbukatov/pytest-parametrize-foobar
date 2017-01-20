@@ -1,0 +1,10 @@
+# python object files
+*.py[cod]
+
+# pytest cache
+.cache
+
+# vim temporary and swap files
+*~
+*.swp
+*.swo
