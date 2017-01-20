@@ -18,3 +18,6 @@ def test_bar(x, y, z):
     assert x is not None
     assert y is not None
     # assert z is not None
+
+def test_baz(single_one):
+    assert len(single_one) == 1
